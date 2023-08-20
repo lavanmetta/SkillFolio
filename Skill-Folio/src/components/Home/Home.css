@@ -1,0 +1,40 @@
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-container > h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 5px;
+}
+
+.heading-container > h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.heading-container > p {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 80%;
+  text-align: center;
+}
+
+.cmr {
+  border: none;
+  height: 50px;
+  width: 240px;
+  background-color: #0079FF;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+
