@@ -10,7 +10,10 @@ export default function Home() {
         Resume Builder
       </motion.h1>
 
-      <h3>Create a professional resume with SkillFolio</h3>
+      <h3>
+        Create a professional resume with
+        <span className="brand-name"> SkillFolio</span>
+      </h3>
       <p>
         Unlock the power of a standout resume with ResuGenius. Craft your
         professional journey effortlessly and make a lasting impression on

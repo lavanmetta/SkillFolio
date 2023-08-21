@@ -1,20 +1,25 @@
 .heading-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-color: #000000;
+  height: 100vh;
+ 
 }
 
 .heading-container > h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
   margin: 5px;
+  color: white;
+ 
 }
 
 .heading-container > h3 {
   font-size: 1rem;
   font-weight: 500;
   margin: 5px;
+  color: white;
 }
 
 .heading-container > p {
@@ -22,19 +27,24 @@
   font-weight: 400;
   width: 80%;
   text-align: center;
+  color: #888888;
+  
 }
 
 .cmr {
   border: none;
   height: 50px;
   width: 240px;
-  background-color: #0079FF;
+  background-color: #0079ff;
   border-radius: 50px;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.6px;
   font-size: 0.9rem;
   cursor: pointer;
 }
 
-
+.brand-name {
+  color: #ffffff;
+  background-color: transparent;
+}
