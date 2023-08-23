@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000000;
+
   height: 100vh;
- 
+}
+
+.main-home {
+  background-color: #000000;
+  overflow-x: hidden;
 }
 
 .heading-container > h1 {
@@ -12,7 +16,6 @@
   font-weight: 900;
   margin: 5px;
   color: white;
- 
 }
 
 .heading-container > h3 {
@@ -28,7 +31,6 @@
   width: 80%;
   text-align: center;
   color: #888888;
-  
 }
 
 .cmr {
@@ -47,4 +49,8 @@
 .brand-name {
   color: #ffffff;
   background-color: transparent;
+}
+
+img {
+  width: 200px;
 }

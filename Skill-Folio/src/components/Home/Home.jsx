@@ -1,5 +1,6 @@
 import "./Home.css";
 import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <div className="heading-container">
