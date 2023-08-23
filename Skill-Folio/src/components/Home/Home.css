@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 100vh;
 }
 
 .main-home {
@@ -51,6 +49,28 @@
   background-color: transparent;
 }
 
-img {
-  width: 200px;
+.resume-img {
+  width: 250px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.resume-img:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
+
+.resume-container {
+  width: 50%;
+  padding: 1rem;
+  outline: none;
+}
+
+.slider {
+  margin: 5rem;
+}
+
+.slick-arrow {
+  display: none !important;
 }
