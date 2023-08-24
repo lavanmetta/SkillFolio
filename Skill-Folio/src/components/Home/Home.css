@@ -49,14 +49,14 @@
   background-color: transparent;
 }
 
-.resume-img {
+.resume-container > img {
   width: 250px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
 
-.resume-img:hover {
+.resume-container > img:hover {
   transform: scale(1.05);
   transition: all 300ms ease-in-out;
 }
