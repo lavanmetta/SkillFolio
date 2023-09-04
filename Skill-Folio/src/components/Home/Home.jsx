@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 import { motion } from "framer-motion";
 
@@ -27,7 +28,9 @@ export default function Home() {
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >
-        <button className="cmr">Create My Resume</button>
+        <Link className="cmr" to="/resume-editor">
+          Create My Resume
+        </Link>
       </motion.div>
     </div>
   );

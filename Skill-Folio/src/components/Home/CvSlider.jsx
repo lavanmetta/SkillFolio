@@ -23,7 +23,8 @@ export default function CvSlider() {
   };
 
   useEffect(() => {
-    setListOfResumes(ListOfImages());
+    const callListofImages = ListOfImages;
+    setListOfResumes(callListofImages);
   }, []);
 
   return (
