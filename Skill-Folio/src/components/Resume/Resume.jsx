@@ -1,8 +1,14 @@
-import Main from "../FormHandlers/main";
-export default function Resume() {
+import FormSection from "../FormHandlers/FormSection";
+import TemplateSection from "./TemplateSection";
+import "./Resume.css";
+
+function Resume() {
   return (
-    <div>
-      <Main />
+    <div className="resume-container">
+      <FormSection />
+      <TemplateSection />
     </div>
   );
 }
+
+export default Resume;
