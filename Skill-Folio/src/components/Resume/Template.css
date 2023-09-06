@@ -1,10 +1,24 @@
 .template-container {
-  background-color: rgba(0, 115, 255, 0.037);
+  background-color: rgb(241, 247, 255);
   height: 100%;
-  width: 45%;
+  width: 50%;
   top: 0;
   right: 0;
-  padding: 30px;
+  padding: 0px;
   overflow-y: scroll;
   position: fixed;
+}
+
+.canv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#resumeCanvas {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 4px;
+    background-color: white;
 }

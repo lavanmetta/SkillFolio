@@ -1,10 +1,9 @@
 .formsection-container {
-  background-color: rgba(0, 115, 255, 0.037);
   height: 100%;
-  width: 45%;
+  width: 50%;
   top: 0;
   left: 0;
-  padding: 30px;
+  padding: 0px;
   overflow-y: scroll;
   position: fixed;
 
