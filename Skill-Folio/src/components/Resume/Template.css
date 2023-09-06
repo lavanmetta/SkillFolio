@@ -1,0 +1,10 @@
+.template-container {
+  background-color: rgba(0, 115, 255, 0.037);
+  height: 100%;
+  width: 45%;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  overflow-y: scroll;
+  position: fixed;
+}

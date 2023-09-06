@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "formik": "^2.4.3",
     "framer-motion": "^10.16.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-shimmer": "^3.2.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

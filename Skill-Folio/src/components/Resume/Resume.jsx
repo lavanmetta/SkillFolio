@@ -1,12 +1,15 @@
-import FormSection from "../FormHandlers/FormSection";
+import FormSection from "./FormSection";
 import TemplateSection from "./TemplateSection";
 import "./Resume.css";
+import { BasicDetailsProvider } from "../Context/BasicDetails";
 
 function Resume() {
   return (
     <div className="resume-container">
-      <FormSection />
-      <TemplateSection />
+      <BasicDetailsProvider>
+        <FormSection />
+        <TemplateSection />
+      </BasicDetailsProvider>
     </div>
   );
 }
