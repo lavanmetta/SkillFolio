@@ -5,18 +5,27 @@ import { PropTypes } from "prop-types";
 export const BasicDetailsContext = createContext({
   name: "",
   email: "",
-  setName: () => {},
-  setEmail: () => {},
+  phoneNumber: "",
+  city: "",
+  country: "",
+  jobProfile : "",
+  setBasicDetails: () => {},
 });
 
 export const BasicDetailsProvider = ({ children }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [basicDetails, setBasicDetails] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    city: "",
+    country: "",
+    jobProfile: ''
+  });
 
-  console.log(children)
+  console.log(children);
 
   return (
-    <BasicDetailsContext.Provider value={{ name, email, setName, setEmail }}>
+    <BasicDetailsContext.Provider value={{ basicDetails, setBasicDetails }}>
       {children}
     </BasicDetailsContext.Provider>
   );
