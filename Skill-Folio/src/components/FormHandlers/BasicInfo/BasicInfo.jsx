@@ -88,10 +88,30 @@ export default function BasicInfo() {
             />
           </div>
         </div>
+
+        <div className="basicinfo-form-container bsf">
+          <div className="sec1">
+            <label>Summary</label>
+            <textarea
+              rows="4"
+              cols="50"
+              placeholder="Profile Summary"
+              onChange={(e) =>
+                setBasicDetails({ ...basicDetails, summary: e.target.value })
+              }
+              readOnly={isSubmitted} // Make input non-editable after submission
+            />
+          </div>
+        </div>
+
         {isSubmitted ? (
-          <button type="submit">clear</button>
+          <button className={`lock-btn ${isSubmitted ? "red" : ""}`}>
+            <i className="ri-lock-fill"></i>
+          </button>
         ) : (
-          <button type="submit">Submit</button>
+          <button type="submit" className="lock-btn">
+            <i className="ri-lock-unlock-fill"></i>
+          </button>
         )}
       </form>
     </div>

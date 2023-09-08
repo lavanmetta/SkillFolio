@@ -19,7 +19,8 @@ export const BasicDetailsProvider = ({ children }) => {
     phoneNumber: "",
     city: "",
     country: "",
-    jobProfile: ''
+    jobProfile: '',
+    summary : ''
   });
 
   console.log(children);
