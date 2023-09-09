@@ -23,7 +23,6 @@ export const BasicDetailsProvider = ({ children }) => {
     summary : ''
   });
 
-  console.log(children);
 
   return (
     <BasicDetailsContext.Provider value={{ basicDetails, setBasicDetails }}>
