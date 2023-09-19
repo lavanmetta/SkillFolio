@@ -8,8 +8,7 @@ export const BasicDetailsContext = createContext({
   phoneNumber: "",
   city: "",
   country: "",
-  jobProfile : "",
-  setBasicDetails: () => {},
+  jobProfile: "",
 });
 
 export const BasicDetailsProvider = ({ children }) => {
@@ -19,10 +18,9 @@ export const BasicDetailsProvider = ({ children }) => {
     phoneNumber: "",
     city: "",
     country: "",
-    jobProfile: '',
-    summary : ''
+    jobProfile: "",
+    summary: "",
   });
-
 
   return (
     <BasicDetailsContext.Provider value={{ basicDetails, setBasicDetails }}>

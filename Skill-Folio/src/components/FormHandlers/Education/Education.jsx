@@ -1,8 +1,8 @@
-/* eslint-disable react/prop-types */
-import { useState } from "react";
-// import { EducationDetailsContext } from "../../Context/EducationDetails";
+import { useEffect, useState } from "react";
+import { years } from "../../../Data/Util";
 
 export default function Education() {
+  const [yearsList, setYearsList] = useState([]);
   const [eduData, setEduData] = useState({
     institute: "",
     degree: "",
@@ -11,6 +11,10 @@ export default function Education() {
     city: "",
   });
 
+  useEffect(() => {
+    setYearsList(years());
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEduData((prevData) => ({
@@ -18,6 +22,8 @@ export default function Education() {
       [name]: value,
     }));
   };
+
+  console.log(yearsList);
 
   return (
     <div className="edu">
@@ -48,24 +54,38 @@ export default function Education() {
       <div className="input-section">
         <div>
           <label htmlFor="startDate">Start Date</label>
-          <input
-            type="date"
+
+          <select
             id="startDate"
             name="startDate"
-            value={eduData.startDate}
             onChange={handleChange}
-          />
+            value={eduData.startDate}
+          >
+            <option value="year">Start Year</option> {/* Default option */}
+            {yearsList.map((each) => (
+              <option key={each} value={each}>
+                {each}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div>
           <label htmlFor="endDate">End Date</label>
-          <input
-            type="date"
+
+          <select
             id="endDate"
             name="endDate"
             value={eduData.endDate}
             onChange={handleChange}
-          />
+          >
+            <option value="year">End Year</option> {/* Default option */}
+            {yearsList.map((each) => (
+              <option key={each} value={each}>
+                {each}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div>
@@ -79,8 +99,6 @@ export default function Education() {
           />
         </div>
       </div>
-
-      <button>Add</button>
     </div>
   );
 }

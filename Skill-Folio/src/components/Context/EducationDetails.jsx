@@ -11,20 +11,14 @@ export const EducationDetailsContext = createContext({
       city: "Example City",
     },
   ],
-  addEducationDetail: () => {},
-  setEducationDetails: () => {}, // Add this function
 });
 
 export const EducationDetailsProvider = ({ children }) => {
   const [educationDetails, setEducationDetails] = useState([]);
 
-  const addEducationDetail = (newEducationDetail) => {
-    setEducationDetails([...educationDetails, newEducationDetail]);
-  };
-
   return (
     <EducationDetailsContext.Provider
-      value={{ educationDetails, addEducationDetail, setEducationDetails }} // Include setEducationDetails in the context
+      value={{ educationDetails, setEducationDetails }} // Include setEducationDetails in the context
     >
       {children}
     </EducationDetailsContext.Provider>
