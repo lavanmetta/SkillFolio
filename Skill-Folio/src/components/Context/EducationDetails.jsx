@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 export const EducationDetailsContext = createContext({
   educationDetails: [
     {
-      degree: "Bachelor of Science",
-      institute: "Example University",
-      startDate: "2020-09-01",
-      endDate: "2024-05-31",
-      city: "Example City",
+      degree: "",
+      institute: "",
+      startDate: "",
+      endDate: "",
+      city: "",
     },
   ],
 });

@@ -8,9 +8,6 @@ export default function AddEducation() {
         <h1>Education Details</h1>
       </div>
       <Education />
-      <div>
-        <button>Add Education</button>
-      </div>
     </div>
   );
 }

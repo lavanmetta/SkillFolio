@@ -11,12 +11,17 @@ export default function EducationTemplate() {
       </div>
       <div>
         {educationDetails.map((education, index) => (
-          <div key={index}>
-            <h2>Degree: {education.degree}</h2>
-            <p>Institution: {education.institute}</p>
-            <p>Start Date: {education.startDate}</p>
-            <p>End Date: {education.endDate}</p>
-            <p>City: {education.city}</p>
+          <div key={index} className="edu-container">
+            <div className="edu1">
+              <h4>{education.degree}</h4>
+              <p>{education.institute}</p>
+            </div>
+            <div className="edu2">
+              <p>
+                {education.startDate}-{education.endDate}
+              </p>
+              <p>{education.city}</p>
+            </div>
           </div>
         ))}
       </div>
