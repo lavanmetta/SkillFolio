@@ -50,6 +50,10 @@
   margin: 0;
 }
 
+h1 {
+  font-size: 28px;
+}
+
 .header p {
   font-size: 14px;
   margin: 0;
